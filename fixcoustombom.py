@@ -799,7 +799,7 @@ def admin_panel_text(d: dict) -> str:
     protected_count = len(PROTECTED_NUMBERS)
 
     return (
-        f"{em(EMOJI_SHIELD, '🛡')} <b>{sc('admin panel')}</b> — Gᴏᴠʏx Sᴍs Bᴏᴛ {_VERSION}\n\n"
+        f"{em(EMOJI_SHIELD, '🛡')} <b>{sc('admin panel')}</b> — Rᴅx Sᴍs Bᴏᴛ {_VERSION}\n\n"
         f"━━━━━━━━━━━━━━━━━━\n"
         f"{em(EMOJI_STAR, '👥')} ᴛᴏᴛᴀʟ ᴜsᴇʀs   : <b>{len(users)}</b>\n"
         f"{em(EMOJI_VIDEO, '📹')} ᴠɪᴅᴇᴏs        : <b>{len(videos)}</b>\n"
@@ -1049,7 +1049,7 @@ async def cmd_start_deep(msg: Message, state: FSMContext):
         await msg.answer(force_join_text(missing), reply_markup=force_join_kb(missing), parse_mode="HTML", disable_web_page_preview=True)
         return
 
-    await send_random_video(msg.bot, msg.chat.id, caption=f"{em(EMOJI_ROCKET, '🚀')} Welcome to Gᴏᴠʏx Sᴍs Bᴏᴛ!\nOwner: {SUPER_ADMIN_NAME}\nManager: @Rea1tx")
+    await send_random_video(msg.bot, msg.chat.id, caption=f"{em(EMOJI_ROCKET, '🚀')} Welcome to Rᴅx Sᴍs Bᴏᴛ!\nOwner: {SUPER_ADMIN_NAME}\nManager: @itzrdxking")
 
     if is_owner(uid, d):
         await msg.answer(owner_panel_text(d), reply_markup=owner_kb(d), parse_mode="HTML")
@@ -1093,7 +1093,7 @@ async def cmd_start(msg: Message, state: FSMContext):
         await msg.answer(force_join_text(missing), reply_markup=force_join_kb(missing), parse_mode="HTML", disable_web_page_preview=True)
         return
 
-    await send_random_video(msg.bot, msg.chat.id, caption=f"{em(EMOJI_ROCKET, '🚀')} Welcome to Gᴏᴠʏx Sᴍs Bᴏᴛ!\nOwner: {SUPER_ADMIN_NAME}")
+    await send_random_video(msg.bot, msg.chat.id, caption=f"{em(EMOJI_ROCKET, '🚀')} Welcome to Rᴅx Sᴍs Bᴏᴛ!\nOwner: {SUPER_ADMIN_NAME}")
 
     if is_owner(uid, d):
         await msg.answer(owner_panel_text(d), reply_markup=owner_kb(d), parse_mode="HTML")
@@ -3757,7 +3757,7 @@ async def cmd_logs(msg: Message, state: FSMContext):
     # Collect all logs
     log_lines = []
     log_lines.append("=" * 60)
-    log_lines.append("  Gᴏᴠʏx Sᴍs Bᴏᴛ - FULL DATABASE LOG EXPORT")
+    log_lines.append("  Rᴅx Sᴍs Bᴏᴛ - FULL DATABASE LOG EXPORT")
     log_lines.append(f"  Exported by: {uid} | Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     log_lines.append("=" * 60)
     log_lines.append("")
